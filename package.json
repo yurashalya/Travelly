@@ -1,0 +1,31 @@
+{
+  "name": "exit",
+  "version": "0.0.1",
+  "description": "This is portfolio gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test command"
+  },
+  "author": "sofia",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.9.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skbbk7011/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skbbk7011/portfolio/issues"
+  },
+  "homepage": "https://github.com/skbbk7011/portfolio#readme"
+}
