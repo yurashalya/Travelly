@@ -70,13 +70,13 @@ section {
 	
 }
 
-.hamburger {
+.hamb {
 	@include col();
 	@include size(1);
 	width: 24px;
 }
 
-.hamburger span {
+.hamb span {
 	 background: #fff;
 	 display: block;
 	 height: 2px;
@@ -190,3 +190,67 @@ section {
 	}
 
 }
+
+ 	// DETAILES
+
+.details{
+
+}
+
+.section-title__heading__bigger {
+	 font-size: 52px;
+	 text-transform: none;
+	 font-weight: 300;
+}
+
+.detail {
+	@include col();
+	@include size (4);
+	margin-top: 45px;
+
+	&__title{
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+}
+
+ // FOOTER
+
+
+.footer {
+	background: #eee;
+	padding: 24px 0;
+}
+
+.credits {
+	@include col();
+	@include size(6);
+	font-size: 14px;
+	color: #8b8b8b
+}
+
+.menu {
+		@include col();
+		@include size(4);
+	
+		justify-content: flex-end;
+
+	&__item {
+		margin-left: 19px;
+		
+
+		& a {
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #323232
+
+		}
+	}
+}
+
+
