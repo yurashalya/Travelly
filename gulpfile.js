@@ -1,49 +1,53 @@
 'use strict';
+ 
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var smartgrid = require('smart-grid');
 
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    browserSync = require('browser-sync').create(),
-    sourcemaps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer'),
-    concat = require('gulp-concat'),
-    clean = require('gulp-clean'),
-    uglify = require('gulp-uglify');
+/* It's principal settings in smart grid project */
+var settings = {
+    outputStyle: 'scss', /* less || scss || sass || styl */
+    columns: 12, /* number of grid columns */
+    offset: '30px', /* gutter width px || % */
+    mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
+    container: {
+        maxWidth: '1200px', /* max-width оn very large screen */
+        fields: '0' /* side fields */
+    },
+    breakPoints: {
+        lg: {
+            width: '1100px', /* -> @media (max-width: 1100px) */
+        },
+        md: {
+            width: '960px'
+        },
+        sm: {
+            width: '780px',
+        },
+        xs: {
+            width: '560px'
+        }
+        /* 
+        We can create any quantity of break points.
 
+        some_name: {
+            width: 'Npx',
+            fields: 'N(px|%|rem)',
+            offset: 'N(px|%|rem)'
+        }
+        */
+    }
+};
 
+smartgrid('./sass', settings);
 
+ 
 gulp.task('sass', function () {
-    gulp.src('sass/*.scss', {base: 'sass'})
-        .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'})
-            .on('error', sass.logError))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(sourcemaps.write('maps'))
-        .pipe(gulp.dest('css'))
-        .pipe(browserSync.stream({match: '**/*.css'}));
+  gulp.src('./sass/main.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
 });
-
-gulp.task('clean', function () {
-    return gulp.src('js', {read: false})
-        .pipe(clean());
+ 
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
 });
-
-gulp.task('prod', function() {
-    return gulp.src('jsWork/*.js')
-        .pipe(concat('js/main.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('js'))
-});
-
-gulp.task('watch', function () {
-    browserSync.init({
-        proxy: "portfolio.mysite.local"
-    });
-
-    gulp.watch('sass/*.scss', ['sass']);
-    gulp.watch('*.html', browserSync.reload);
-});
-
-gulp.task('default', ['watch']);
