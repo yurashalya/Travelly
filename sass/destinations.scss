@@ -1,6 +1,6 @@
 
 .destinations {
-	background: #eeee;
+	background: $grey1;
 	padding: 48px 0 67px;
 }
 
@@ -17,7 +17,7 @@
 }
 .section-title__text {
 	font-size: 15px;
-		color: #8b8b8b;
+		color: $grey3;
 }
 
 
@@ -43,7 +43,7 @@
 	&__price {
 		position: absolute;
 		font-size: 13px;
-		color: #fff;
+		color: $white;
 		bottom: 14px;
 		right: 20px;
 	}

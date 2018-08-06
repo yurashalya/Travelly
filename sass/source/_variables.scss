@@ -1,0 +1,41 @@
+//br
+$mobile-width: 450px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+// Colors
+$white:         #fff;
+$grey1:         #eee;
+$grey2:         #e1e0d8;
+$grey3:         #8b8b8b;
+$grey4:         #323232;
+$red:           #fd4f32;
+
+
+// Font weight
+$light:         300;
+$regular:       400;
+$semibold:      500;
+$bold:          600;
+
+
+// Font size
+$size-default:  15;
+
+
+// Spaces
+$smallest:      10px;
+$small:         15px;
+$medium:        25px;
+$large:         35px;
+$extra:         50px;
+
+
+// Fonts
+$font-primary: 'Open Sans', sans-serif;
+
+
+// mixins
+@mixin font-size ($size: $size-default){
+  font-size: #{$size/$size-default}rem;
+}

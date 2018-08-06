@@ -2,7 +2,7 @@
 	background: url(../img/first-bg.jpg) no-repeat center top;
 	padding-bottom: 11%;
 	padding-top: 50px;
-	color: #fff;
+	color: $white;
 	
 }
 
@@ -51,7 +51,7 @@
 	&__title {
 		font-size: 52px;
 		font-weight: 300;
-		color: #fff;
+		color: $white;
 
 		@include sm(font-size, 40px);
 		@include xs(font-size, 25px);
@@ -79,7 +79,7 @@
 
   & button {
   	background: #fd4f32;
-  	color: #fff;
+  	color: $white;
   	font-weight: 700;
   	font-size: 16px;
   	text-transform: uppercase;

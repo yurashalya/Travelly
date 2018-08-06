@@ -9,7 +9,7 @@
 	@include size(6);
 	@include size-xs(12);
 	font-size: 14px;
-	color: #8b8b8b
+	color: $grey3;
 }
 
 .footer .container > .row {
@@ -40,5 +40,24 @@
 		}
 	}
 }
+
+@media (max-width: 980px) {
+  .footer {
+    &-wrapper {
+      > div {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .menu {
+      margin: $small auto 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+
+}
+
 
 

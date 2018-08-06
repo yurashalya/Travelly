@@ -1,11 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin-ext);
+
+
 @import "smart-grid";
 @include reset();
-@import "settings.scss";
+@import "source/normalize";
+@import "source/variables";
+@import "settings";
 @import "header";
 @import "destinations";
 @import "detailes";
 @import "footer";
- 
+
 
 
 

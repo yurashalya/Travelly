@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin-ext);
+
 body {
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
@@ -19,7 +19,7 @@ ul,li {
 }
 
 p {
-	color: #8b8b8b;
+	color: $grey3;
 	line-height: 1.6em;
 }
 
