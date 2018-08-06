@@ -4,7 +4,7 @@
 	padding: 24px 0;
 }
 
-.about__me {
+.copyright {
 	@include col();
 	@include size(6);
 	@include size-xs(12);
@@ -13,18 +13,18 @@
 }
 
 .footer .container > .row {
-  @include xs(flex-direction, column);
+  	@include xs(flex-direction, column);
 }
 
 .menu {
-		@include col();
-		@include size(4);
-		@include size-xs(12);
-		@include xs(margin-top, 20px);
+	@include col();
+	@include size(4);
+	@include size-xs(12);
+	@include xs(margin-top, 20px);
 		
-		justify-content: flex-end;
-		display: flex;
-		@include xs(flex-direction, column);
+	justify-content: flex-end;
+	display: flex;
+	@include xs(flex-direction, column);
 
 	&__item {
 		margin-left: 19px;
@@ -55,9 +55,6 @@
   }
 }
 
-@media (max-width: 450px) {
-
-}
 
 
 

@@ -97,7 +97,8 @@ table {
 
 body {
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6; }
 
 div, p, input, form, button, span, a {
   box-sizing: border-box; }
@@ -194,7 +195,7 @@ section {
   @media screen and (max-width: 560px) {
     .offer__form {
       flex-direction: colum; } }
-  .offer__form input {
+  .offer__form__input {
     background: #fff;
     border: 0;
     width: 328px;
@@ -204,9 +205,9 @@ section {
     padding-bottom: 10px;
     font-size: 16px; }
     @media screen and (max-width: 560px) {
-      .offer__form input {
+      .offer__form__input {
         width: auto; } }
-  .offer__form button {
+  .offer__form__button {
     background: #fd4f32;
     color: #fff;
     font-weight: 700;
@@ -218,27 +219,27 @@ section {
     display: block;
     border: none; }
     @media screen and (max-width: 560px) {
-      .offer__form button {
+      .offer__form__button {
         width: auto; } }
 
 .destinations {
-  background: #eeee;
+  background: #eee;
   padding: 48px 0 67px; }
 
-.section-title {
+.destinations__about {
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
   width: calc(100% - 30px); }
 
-.section-title__heading {
+.destinations__about__heading {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px; }
 
-.section-title__text {
+.destinations__about__text {
   font-size: 15px;
   color: #8b8b8b; }
 
@@ -282,7 +283,7 @@ section {
     margin-right: 20px;
     margin-bottom: 15px; }
 
-.section-title__heading__bigger {
+.details__bigger {
   font-size: 52px;
   text-transform: none;
   font-weight: 300; }
@@ -307,20 +308,11 @@ section {
     font-size: 15px;
     margin-bottom: 10px; }
 
-@media (max-width: 768px) {
-  .destinations-item {
-    width: calc(50% - 15px * 2);
-    margin: 17.5px 15px; } }
-
-@media (max-width: 450px) {
-  .destinations-item {
-    width: calc(100% - 15px * 2); } }
-
 .footer {
   background: #eee;
   padding: 24px 0; }
 
-.about__me {
+.copyright {
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 15px;
@@ -329,7 +321,7 @@ section {
   font-size: 14px;
   color: #8b8b8b; }
   @media screen and (max-width: 560px) {
-    .about__me {
+    .copyright {
       width: calc(100% - 30px); } }
 
 @media screen and (max-width: 560px) {

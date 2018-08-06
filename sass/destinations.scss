@@ -4,18 +4,18 @@
 	padding: 48px 0 67px;
 }
 
-.section-title {
+.destinations__about {
 	@include col();
 	@include size(12);
 }
 
-.section-title__heading {
+.destinations__about__heading {
 		text-transform: uppercase;
 		font-size: 16px;
 		font-weight: 700;
 		margin-bottom: 10px;
 }
-.section-title__text {
+.destinations__about__text {
 	font-size: 15px;
 		color: $grey3;
 }

@@ -65,8 +65,8 @@
 	margin-top: 24px;
 	@include xs (flex-direction, colum);
 
-& input {
-	background: #fff;
+&__input {
+	background: $white;
 	border: 0;
 	width: 328px;
 	display: block;
@@ -77,7 +77,7 @@
 	@include xs (width, auto);
   }
 
-  & button {
+  &__button {
   	background: #fd4f32;
   	color: $white;
   	font-weight: 700;

@@ -1,5 +1,5 @@
 
-.section-title__heading__bigger {
+.details__bigger {
 	 font-size: 52px;
 	 text-transform: none;
 	 font-weight: 300;
@@ -24,19 +24,3 @@
 	}
 }
 
-@media (max-width: 768px) {
-  .destinations {
-    &-item {
-      width: calc(50% - #{$small} * 2);
-      margin: $large/2 $small;
-    }
-  }
-}
-
-@media (max-width: 450px) {
-  .destinations {
-    &-item {
-      width: calc(100% - #{$small} * 2);
-    }
-  }
-}
