@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin-ext);
+body {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+div, p, input, form, button, span, a {
+	box-sizing:border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	color: #8b8b8b;
+	line-height: 1.6em;
+}
+
+section {
+  padding: 48px 0 67px;
+}

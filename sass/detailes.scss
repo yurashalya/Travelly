@@ -1,0 +1,25 @@
+
+.section-title__heading__bigger {
+	 font-size: 52px;
+	 text-transform: none;
+	 font-weight: 300;
+}
+
+.detail {
+	@include col();
+	@include size (4);
+	@include size-sm(6);
+  	@include size-xs(12);
+
+	margin-top: 45px;
+
+	&__title{
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+}

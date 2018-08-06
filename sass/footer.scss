@@ -1,0 +1,44 @@
+
+.footer {
+	background: #eee;
+	padding: 24px 0;
+}
+
+.about__me {
+	@include col();
+	@include size(6);
+	@include size-xs(12);
+	font-size: 14px;
+	color: #8b8b8b
+}
+
+.footer .container > .row {
+  @include xs(flex-direction, column);
+}
+
+.menu {
+		@include col();
+		@include size(4);
+		@include size-xs(12);
+		@include xs(margin-top, 20px);
+		
+		justify-content: flex-end;
+		display: flex;
+		@include xs(flex-direction, column);
+
+	&__item {
+		margin-left: 19px;
+		@include xs(text-align, center);
+    	@include xs(margin-bottom, 20px);
+   		@include xs(margin-left, 0);
+
+		& a {
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #323232
+
+		}
+	}
+}
+
+

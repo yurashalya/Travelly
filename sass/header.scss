@@ -1,0 +1,93 @@
+.header {
+	background: url(../img/first-bg.jpg) no-repeat center top;
+	padding-bottom: 11%;
+	padding-top: 50px;
+	color: #fff;
+	
+}
+
+.container {
+	@include wrapper();
+}
+
+.container {
+	@include lg(margin-left, 20px);
+	@include lg(margin-right, 20px);
+}
+
+.row {
+	@include row-flex();
+	justify-content: space-between;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.logo {
+	@include col();
+	@include size(2);
+	display: block;
+	width: 147px;
+}
+
+.hamburger {
+	@include col();
+	@include size(1);
+	width: 24px;
+}
+
+.hamburger span {
+	 background: #fff;
+	 display: block;
+	 height: 2px;
+	 margin-bottom: 5px;
+}
+
+.offer {
+	margin-top: 170px;
+	text-align: center;
+
+	&__title {
+		font-size: 52px;
+		font-weight: 300;
+		color: #fff;
+
+		@include sm(font-size, 40px);
+		@include xs(font-size, 25px);
+
+	  }
+}
+
+
+.offer__form {
+	display: flex;
+	margin-top: 24px;
+	@include xs (flex-direction, colum);
+
+& input {
+	background: #fff;
+	border: 0;
+	width: 328px;
+	display: block;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 16px;
+	@include xs (width, auto);
+  }
+
+  & button {
+  	background: #fd4f32;
+  	color: #fff;
+  	font-weight: 700;
+  	font-size: 16px;
+  	text-transform: uppercase;
+  	width: 125px;
+	height: 10px 0;
+	cursor: pointer;
+	display: block;	
+	border: none;
+	@include xs (width, auto);
+  }
+}
