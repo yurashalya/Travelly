@@ -195,7 +195,7 @@ section {
   @media screen and (max-width: 560px) {
     .offer__form {
       flex-direction: colum; } }
-  .offer__form__input {
+  .offer__form input {
     background: #fff;
     border: 0;
     width: 328px;
@@ -205,9 +205,9 @@ section {
     padding-bottom: 10px;
     font-size: 16px; }
     @media screen and (max-width: 560px) {
-      .offer__form__input {
+      .offer__form input {
         width: auto; } }
-  .offer__form__button {
+  .offer__form button {
     background: #fd4f32;
     color: #fff;
     font-weight: 700;
@@ -219,7 +219,7 @@ section {
     display: block;
     border: none; }
     @media screen and (max-width: 560px) {
-      .offer__form__button {
+      .offer__form button {
         width: auto; } }
 
 .destinations {
