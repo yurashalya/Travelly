@@ -1,6 +1,6 @@
 
 .footer {
-	background: #eee;
+	background: $grey1;
 	padding: 24px 0;
 }
 
@@ -35,7 +35,7 @@
 		& a {
 			font-size: 14px;
 			text-transform: uppercase;
-			color: #323232
+			color: $grey4;
 
 		}
 	}
