@@ -2,6 +2,7 @@
 
 @include reset();
 
+
 body {
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
@@ -21,14 +22,6 @@ ul,li {
 	margin: 0;
 }
 
-.d-flex {
-	display: flex;
-}
-
-h1,h2,h3,h4,h5 {
-	color: #323232;
-}
-
 p {
 	color: #8b8b8b;
 	line-height: 1.6em;
@@ -41,7 +34,7 @@ section {
 
 .header {
 	background: url(../img/first-bg.jpg) no-repeat center top;
-	padding-bottom: 204px;
+	padding-bottom: 11%;
 	padding-top: 50px;
 	color: #fff;
 }
@@ -57,9 +50,6 @@ section {
 
 .row {
 	@include row-flex();
-}
-
-.row {
 	justify-content: space-between;
 }
 
@@ -72,16 +62,15 @@ section {
 	@include size(2);
 	display: block;
 	width: 147px;
-	
 }
 
-.hamb {
+.hamburger {
 	@include col();
 	@include size(1);
 	width: 24px;
 }
 
-.hamb span {
+.hamburger span {
 	 background: #fff;
 	 display: block;
 	 height: 2px;
@@ -139,7 +128,6 @@ section {
 .destinations {
 	background: #eeee;
 	padding: 48px 0 67px;
-
 }
 
 .section-title {
@@ -148,7 +136,7 @@ section {
 }
 
 .section-title__heading {
-	text-transform: uppercase;
+		text-transform: uppercase;
 		font-size: 16px;
 		font-weight: 700;
 		margin-bottom: 10px;
@@ -156,7 +144,6 @@ section {
 .section-title__text {
 	font-size: 15px;
 		color: #8b8b8b;
-
 }
 
 
@@ -203,14 +190,9 @@ section {
 		margin-right: 20px;
 		margin-bottom: 15px;
 	}
-
 }
 
  	// DETAILES
-
-.details{
-
-}
 
 .section-title__heading__bigger {
 	 font-size: 52px;
@@ -245,7 +227,7 @@ section {
 	padding: 24px 0;
 }
 
-.credits {
+.about__me {
 	@include col();
 	@include size(6);
 	@include size-xs(12);
@@ -261,11 +243,10 @@ section {
 		@include col();
 		@include size(4);
 		@include size-xs(12);
-
 		@include xs(margin-top, 20px);
 		
 		justify-content: flex-end;
-
+		display: flex;
 		@include xs(flex-direction, column);
 
 	&__item {

@@ -17,7 +17,7 @@ var settings = {
     breakPoints: {
         lg: {
             width: '1100px', /* -> @media (max-width: 1100px) */
-            fields: '20px',
+            fields: '20px'
         },
         md: {
             width: '960px'
